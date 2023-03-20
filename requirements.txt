@@ -1,0 +1,4 @@
+aniposelib
+toml
+opencv-python
+numpy

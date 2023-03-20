@@ -1,0 +1,17 @@
+[calibration]
+# checkerboard / charuco / aruco
+board_type = "charuco"
+# width and height of grid
+board_size = [5, 7]
+# number of bits in the markers, if aruco/charuco
+board_marker_bits = 4
+# number of markers in dictionary, if aruco/charuco
+board_marker_dict_number = 50
+# length of marker side
+board_marker_length = 0.01875  # m
+# If aruco, length of marker separation
+# board_marker_separation_length = 1 # mm
+# If charuco or checkerboard, square side length
+board_square_side_length = 0.025 # m
+animal_calibration = false
+fisheye = true

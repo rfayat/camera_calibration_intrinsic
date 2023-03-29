@@ -25,7 +25,8 @@ def get_calibration_board(config):
 
     elif board_type == 'checkerboard':
         board = Checkerboard(board_size[0], board_size[1],
-                             calib['board_square_side_length'], manually_verify=manually_verify)
+                             calib['board_square_side_length'],
+                             manually_verify=False)
     else:
         raise ValueError("board_type should be one of "
                          "'aruco', 'charuco', or 'checkerboard' not '{}'".format(

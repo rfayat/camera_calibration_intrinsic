@@ -27,7 +27,7 @@ See [anipose documentation](https://anipose.readthedocs.io/en/latest/params.html
 From the `camera_calibration_intrinsic` folder, simply run the [generate_board.py](./generate_board.py) script:
 
 ```bash
-$ python -m generate_board.py
+$ python -m generate_board
 ```
 
 The calibration board is saved in the Desktop folder (this can be edited in the script).

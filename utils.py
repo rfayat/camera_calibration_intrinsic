@@ -1,5 +1,6 @@
 "Utils functions, mainly from anipose."
 from aniposelib.boards import Checkerboard, CharucoBoard
+import cv2
 
 
 def get_calibration_board(config):
@@ -30,3 +31,11 @@ def get_calibration_board(config):
                              board_type))
 
     return board
+
+
+def get_size(path_in):
+    "Return the width and height of a video, in pixels."
+    cap = cv2.VideoCapture(str(path_in))
+    width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
+    height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    return int(width), int(height)

@@ -36,7 +36,7 @@ def calibrate(detection, size, n_frame_max=100):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 1:
+    if len(sys.argv) < 2:
         raise ValueError("Need to pass input calibration video.")
     path_in = Path(sys.argv[1]).expanduser()
     if not path_in.is_file():
